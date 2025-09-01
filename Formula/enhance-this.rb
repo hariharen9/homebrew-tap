@@ -6,8 +6,8 @@ class EnhanceThis < Formula
   homepage "https://github.com/hariharen9/enhance-this"
   # url "https://pypi.io/packages/source/e/enhance-this/enhance-this-0.1.0.tar.gz" # <-- TODO: Update with real URL on first release
   # sha256 "..." # <-- TODO: Update with real hash on first release
-  url "https://github.com/hariharen9/enhance-this/archive/refs/tags/v0.1.8.tar.gz" # Placeholder
-  sha256 "c4ebc11f968e85f1b1f7ff824d3032ecac6609758552a2594a372f0b60421b4d" # Placeholder
+  url "https://github.com/hariharen9/enhance-this/archive/refs/tags/v0.2.0.tar.gz" # Placeholder
+  sha256 "eab7cbe8a0526f3e8de2ba471389fd5578a8fba28ac2e7ac88b755d4850a0fdb" # Placeholder
 
   depends_on "python@3.11"
 
