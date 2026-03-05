@@ -11,7 +11,7 @@ class Kessler < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/hariharen9/kessler/releases/download/v0.2.1/kessler_0.2.1_darwin_amd64.tar.gz"
-      sha256 "534870c291c8bd717fb97cc2509531239e331d718191092ab081a47d4dfec8c9"
+      sha256 "c770b8481b6407836c7abb9f0e98be3729d2efa3da5c41fb29750e61fff55542"
 
       define_method(:install) do
         bin.install "kessler"
@@ -19,7 +19,7 @@ class Kessler < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/hariharen9/kessler/releases/download/v0.2.1/kessler_0.2.1_darwin_arm64.tar.gz"
-      sha256 "f520430e7cdb73910e3d2c87ed1cac6fe9a4ddaa0fc92b4c7102205d2b332748"
+      sha256 "4ca92803413a68e09bae1c68de57c7bdb9e18f50cd2a6183292238cf699789d5"
 
       define_method(:install) do
         bin.install "kessler"
@@ -30,14 +30,14 @@ class Kessler < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/hariharen9/kessler/releases/download/v0.2.1/kessler_0.2.1_linux_amd64.tar.gz"
-      sha256 "daac89694e3a52f38c90eb4e4a517296af2d316ac9ab5e4dd74d10bbc4d20a24"
+      sha256 "e497057e3cfda94dbc7003b09ebd6f5d8b626220872bf3e5532a8ccea35d67f0"
       define_method(:install) do
         bin.install "kessler"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/hariharen9/kessler/releases/download/v0.2.1/kessler_0.2.1_linux_arm64.tar.gz"
-      sha256 "d081c930bdd47126f26e2991af311accb904e069358d24984752387a761ac005"
+      sha256 "e57098c95efa85346806e0093c607b55ff63ef7d342a4adf0a07f910abffc703"
       define_method(:install) do
         bin.install "kessler"
       end
