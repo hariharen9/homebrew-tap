@@ -5,21 +5,21 @@
 class Kessler < Formula
   desc "🛰️ Intelligent CLI tool to find and safely clean build artifacts & caches"
   homepage "https://github.com/hariharen9/kessler"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hariharen9/kessler/releases/download/v0.2.1/kessler_0.2.1_darwin_amd64.tar.gz"
-      sha256 "a9f7be2f0bb64bd74933bbb0ec16a64fd94dccca0ccff9be6c8055288e153430"
+      url "https://github.com/hariharen9/kessler/releases/download/v0.2.2/kessler_0.2.2_darwin_amd64.tar.gz"
+      sha256 "f2f6f22602e50dacfd1467bce0de9996516256c8c2b6689d369289763a73740c"
 
       define_method(:install) do
         bin.install "kessler"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hariharen9/kessler/releases/download/v0.2.1/kessler_0.2.1_darwin_arm64.tar.gz"
-      sha256 "a427ac4bc1715e5fe0fb1b1f14558e4f6df569e94abe486323bae0e343c817b2"
+      url "https://github.com/hariharen9/kessler/releases/download/v0.2.2/kessler_0.2.2_darwin_arm64.tar.gz"
+      sha256 "6eeba4e1d37a1d42b102010984efccb4dd274b6284e29a71e8115bf91bc610a6"
 
       define_method(:install) do
         bin.install "kessler"
@@ -29,15 +29,15 @@ class Kessler < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hariharen9/kessler/releases/download/v0.2.1/kessler_0.2.1_linux_amd64.tar.gz"
-      sha256 "9c45f2456d305ce860e0bba6db8e82a669d121a06e058a73be4b07c0b514a813"
+      url "https://github.com/hariharen9/kessler/releases/download/v0.2.2/kessler_0.2.2_linux_amd64.tar.gz"
+      sha256 "aa049194de668cd9731a1e7cc58014cabb53ec39a433bb777128b653e59b465b"
       define_method(:install) do
         bin.install "kessler"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hariharen9/kessler/releases/download/v0.2.1/kessler_0.2.1_linux_arm64.tar.gz"
-      sha256 "b22fd3b9f5638985b4b29ef0e44a4219657bc9a1eeddc215264d35a0e10262f3"
+      url "https://github.com/hariharen9/kessler/releases/download/v0.2.2/kessler_0.2.2_linux_arm64.tar.gz"
+      sha256 "f148b1cffa361a527522290d119d144e9a57922b0216799680727d542955f7e4"
       define_method(:install) do
         bin.install "kessler"
       end
